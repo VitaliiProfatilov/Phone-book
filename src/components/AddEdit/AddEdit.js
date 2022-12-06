@@ -110,7 +110,7 @@ export function AddEdit({contactsData, editData, contact}) {
                         {onError && !number[0].value && <div className={styles.error} > Please, fill </div>}
                     </div>
                 </form>
-                <Link to={go() && '/' } >
+                <Link to={go() && 'Phone-book' } >
                     <button onClick={() => {window.location.href === 'vitaliiprofatilov.github.io/Phone-book/Add' ? go() && contactsData 
                         ({
                             name: name,
