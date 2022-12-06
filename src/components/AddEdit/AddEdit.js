@@ -41,7 +41,7 @@ export function AddEdit({contactsData, editData, contact}) {
             <Header/>
             <div className={styles.content}>
                 <h2>
-                    {window.location.href === 'vitaliiprofatilov.github.io/Phone-book/Add' ? 'Register new contact' : 'Edit contact'}
+                    {window.location.href === 'https://vitaliiprofatilov.github.io/Phone-book/Add' ? 'Register new contact' : 'Edit contact'}
                 </h2>
                 <form className={styles.form}>
                     <div> 
@@ -111,7 +111,7 @@ export function AddEdit({contactsData, editData, contact}) {
                     </div>
                 </form>
                 <Link to={go() && '/Phone-book' } >
-                    <button onClick={() => {window.location.href === 'vitaliiprofatilov.github.io/Phone-book/Add' ? go() && contactsData 
+                    <button onClick={() => {window.location.href === 'https://vitaliiprofatilov.github.io/Phone-book/Add' ? go() && contactsData 
                         ({
                             name: name,
                             lastName: lastName,
