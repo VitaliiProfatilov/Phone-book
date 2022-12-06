@@ -76,8 +76,8 @@ export function App() {
         deleteContacts={deleteContacts} 
         editContacts={editContacts} 
       />} />
-      <Route path='Add' element={<AddEdit contactsData={contactsData} />} />
-      <Route path='Edit' element={<AddEdit 
+      <Route path='Phone-book/Add' element={<AddEdit contactsData={contactsData} />} />
+      <Route path='Phone-book/Edit' element={<AddEdit 
         contactsData={contactsData}
         editData={editData}
         contact={contact}  
