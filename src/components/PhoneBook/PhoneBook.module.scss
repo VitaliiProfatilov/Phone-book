@@ -1,3 +1,68 @@
-.container {
-    background: lightsalmon;
+
+.wrapper {    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .content {
+        max-width: 70%;
+        margin-top: 1rem;
+        margin-left: 20%;
+        margin-bottom: 5rem;
+        flex: 1;
+        .buttonContainer {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            .contactButton {
+                background: blue;
+                color: white;
+                border: none;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                margin-right: 1em;
+                min-width: max-content;
+                cursor: pointer;
+                &:active {
+                    scale: 0.9;
+                }
+            }
+        }
+        .infoContainer {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 20% 10% 10% 10%;
+            word-wrap: break-word;
+            div {
+                text-align: center;
+                border: 1px solid #cbcbd0;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .even {
+                background-color: rgb(247, 247, 247);
+            }
+            .firstChild {
+                font-weight: bold;
+            }
+            .edit {
+                background-color: green;
+                text-decoration: none;
+            }
+            .noDekor {
+                text-decoration: none;
+                color: black;
+            }
+            .delete {
+                background-color: red;
+            }
+            .delete, .edit {
+                color: white;
+                border-radius: 0.3rem;
+                margin: auto;
+                padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+                cursor: pointer;
+            }
+        }
+    }
 }
+
