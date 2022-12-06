@@ -71,7 +71,7 @@ export function App() {
 
   return (
     <Routes>
-      <Route path='/' element={<PhoneBook 
+      <Route path='Phone-book' element={<PhoneBook 
         contactsInfo={contactsInfo} 
         deleteContacts={deleteContacts} 
         editContacts={editContacts} 
